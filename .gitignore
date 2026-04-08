@@ -1,0 +1,14 @@
+dataset/
+!weights/.gitkeep
+
+weights/
+*.pth
+!weights/.gitkeep
+
+# 忽略 Python 运行产生的缓存文件
+__pycache__/
+*.pyc
+
+# 忽略各种 IDE 的配置文件
+.vscode/
+.idea/

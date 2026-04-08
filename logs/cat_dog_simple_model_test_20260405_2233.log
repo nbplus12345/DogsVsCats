@@ -1,0 +1,13 @@
+[2026-04-05 22:33:09] 
+[2026-04-05 22:33:09] === Pre-flight Checklist ===
+[2026-04-05 22:33:09] [INFO] Device set to: privateuseone:0
+[2026-04-05 22:33:09] [INFO] Model weight path is ./cat_dog_simple_model.pth
+[2026-04-05 22:33:10] [INFO] Dataset loaded. Test: 1000 images
+[2026-04-05 22:33:10] [INFO] Dataloaders ready. Batch size: 32 | Total test steps: 32
+[2026-04-05 22:33:10] ============================
+[2026-04-05 22:33:10] 
+[2026-04-05 22:33:10] ==== Evaluation Started ===✈
+[2026-04-05 22:33:13] 
+[2026-04-05 22:33:13] == Evaluation Summary ==
+[2026-04-05 22:33:13] Final Accuracy: 86.10%
+[2026-04-05 22:33:13] ========================
