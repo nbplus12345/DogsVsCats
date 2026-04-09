@@ -1,9 +1,9 @@
-dataset/
+dataset/*
 !dataset/.gitkeep
 
-weights/
-*.pth
+weights/*
 !weights/.gitkeep
+*.pth
 
 # 忽略 Python 运行产生的缓存文件
 __pycache__/
