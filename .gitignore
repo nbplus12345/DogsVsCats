@@ -1,5 +1,5 @@
 dataset/
-!weights/.gitkeep
+!dataset/.gitkeep
 
 weights/
 *.pth
