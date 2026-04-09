@@ -1,10 +1,8 @@
 # 猫狗大战分类模型 (DogsVsCats)
 
 ## 概述
----
-本项目是一个基于 **PyTorch** 的二分类图像识别模型，包含一个 **自定义的三层卷积神经网络** 和迁移过来的 **ResNet-18** 网络。源于Kaggle上的一个挑战(https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition)，经过修改最终包含猫与狗的图片共24000张的数据集以及1000张图片的测试集。本人意在通过该项目掌握基础的Pytorch语法、神经网络的搭建以及迁移学习。
+本项目是一个基于 **PyTorch** 的二分类图像识别模型，包含一个 **自定义的三层卷积神经网络** 和迁移过来的 **ResNet-18** 网络。源于Kaggle上的一个挑战(https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition) ，经过修改最终包含猫与狗的图片共24000张的数据集以及1000张图片的测试集。本人意在通过该项目掌握基础的Pytorch语法、神经网络的搭建以及迁移学习。
 ## 目录结构
----
 ```text
 DogsVsCats/
 ├── dataset/                  # 数据集存放目录 (需自行下载并放置)
@@ -25,7 +23,6 @@ DogsVsCats/
 └── README.md                 # 项目说明文档
 ```
 ## 数据集
----
 本项目使用了 Kaggle 的 [Dogs vs. Cats 数据集](https://www.kaggle.com/competitions/dogs-vs-cats-redux-kernels-edition/data) 中的训练集，由于初始测试集无标签，该项目对原有 25000 张训练集进行修改，随机分配（随机种子为42）猫狗各500张图片用于测试集，剩余图片按 80% 训练集， 20% 测试集的比例进行随机分配。
 
 - **训练集**: 19200 张图片 
@@ -33,13 +30,11 @@ DogsVsCats/
 - **测试集**: 1000 张图片
 - **数据预处理**: 统一缩放至 224x224，并进行了随机水平翻转等数据增强操作。
 ## 环境依赖 
----
 该项目所需环境标注在 **requirements.txt** 中，如下所示： 
 ```python 
 python >= 3.8 torch >= 1.9.0 torchvision scikit-learn torch-directml
 ```
 ## 模型架构
----
  **自定义的 3 层卷积神经网络** 结构大致如图所示：
  ![CNN_model_img.png](CNN_model_img.png)
  
@@ -48,14 +43,12 @@ python >= 3.8 torch >= 1.9.0 torchvision scikit-learn torch-directml
 - 损失函数: 交叉熵 CrossEntropyLoss
 - 优化器: 经典的 SGD 优化器
 ## 训练结果
----
 由于早停机制自动终止，自定义模型经过 48 个 Epoch 的训练，在验证集上达到了 **85.1%** 的准确率，在测试集上达到了 **86.1%** 的准确率。
 
 另外作为对比，**ResNet-18** 经过 3 个 Epoch 的训练，在验证集上达到 **97.73%** 的准确率，在测试集上达到了 **98.2%** 的准确率。
 
 具体训练日志见 **/logs** 。
 ## 快速部署
----
 ### 1. 克隆项目
 
 将项目克隆到本地（请确保你已经安装了 Git）：
@@ -108,7 +101,6 @@ python Predict.py --model_name cat_dog_ResNet_model --batch_size 32
 python Predict.py --model_name cat_dog_CNN_model --batch_size 32
 ```
 ## 后续计划 (To-Do)
----
 - [ ] 引入分层抽样，保证训练集各类公平，防止偏科
 - [ ] 在模型的保存上采用 Top-K 保存策略，引入断点续训
 - [ ] 尝试更多的图像增强方法 (如 Cutout)
