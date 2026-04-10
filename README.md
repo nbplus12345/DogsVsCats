@@ -53,12 +53,12 @@ python >= 3.8 torch >= 1.9.0 torchvision scikit-learn torch-directml
 
 将项目克隆到本地（请确保你已经安装了 Git）：
 ```Bash
-git clone [https://github.com/nbplus12345/DogsVsCats.git](https://github.com/nbplus12345/DogsVsCats.git)
+git clone https://github.com/nbplus12345/DogsVsCats.git
 cd DogsVsCats
 ```
 ### 2. 配置环境
 
-建议使用 Anaconda 创建虚拟环境。本项目特别加入了 `torch-directml` 以支持在 Windows 系统下使用非 NVIDIA 显卡（如 AMD/Intel 核显）进行加速。
+建议使用 Anaconda 创建虚拟环境。本项目特别加入了 `torch-directml` 以支持在 Windows 系统下使用非 NVIDIA 显卡（如 AMD/Intel 核显）进行加速，如有需要自行下载torch-directml库。
 ```Bash
 # 安装所需依赖
 pip install -r requirements.txt
