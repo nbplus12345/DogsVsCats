@@ -23,7 +23,7 @@ DogsVsCats/
 └── README.md                 # 项目说明文档
 ```
 ## 数据集
-本项目使用了 Kaggle 的 [Dogs vs. Cats 数据集](https://www.kaggle.com/competitions/dogs-vs-cats-redux-kernels-edition/data) 中的训练集，由于初始测试集无标签，该项目对原有 25000 张训练集进行修改，随机分配（随机种子为42）猫狗各500张图片用于测试集，剩余图片按 80% 训练集， 20% 测试集的比例进行随机分配。
+本项目使用了 Kaggle 的 [Dogs vs. Cats 数据集](https://www.kaggle.com/competitions/dogs-vs-cats-redux-kernels-edition/data) 中的训练集，由于初始测试集无标签，该项目对原有 25000 张训练集进行修改，随机分配（随机种子为42）猫狗各500张图片用于测试集，剩余图片按 80% 训练集， 20% 验证集的比例进行随机分配。
 
 - **训练集**: 19200 张图片 
 - **验证集**: 4800 张图片
