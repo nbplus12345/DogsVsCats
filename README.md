@@ -10,8 +10,8 @@ DogsVsCats/
 │   └── new_test/             # 划分出的测试集 (由 split_test_utils.py 生成)
 ├── logs/                     # 训练和测试日志自动保存目录
 ├── weights/                  # 模型权重保存目录
-│   ├── cat_dog_CNN_model.pth # 自定义CNN模型权重
-│   └── cat_dog_ResNet_model.pth # ResNet-18模型权重
+│   ├── cat_dog_CNN_model.pth # 自定义CNN模型权重（需自主训练）
+│   └── cat_dog_ResNet_model.pth # ResNet-18模型权重（需自主训练）
 ├── Utils/                    # 工具包目录
 │   ├── config_utils.py       # 集中管理所有超参数和路径配置
 │   ├── split_test_utils.py   # 测试集随机抽样隔离脚本
