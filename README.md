@@ -4,6 +4,7 @@
 本项目是一个基于 **PyTorch** 的二分类图像识别模型，包含一个 **自定义的三层卷积神经网络** 和迁移过来的 **ResNet-18** 网络。源于Kaggle上的一个挑战(https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition) ，经过修改最终包含猫与狗的图片共24000张的数据集以及1000张图片的测试集。本人意在通过该项目掌握基础的Pytorch语法、神经网络的搭建以及迁移学习。
 
 本人后期对该项目做了一篇较完整的复盘，主要记录了本人通过 DogsVsCats 项目理解 PyTorch 图像分类训练闭环的过程，包括数据预处理、数据增强、训练/验证/测试划分、CNN 与 ResNet-18 对比、logits/loss/反向传播、Early Stopping 等内容。
+
 博客链接：[DogsVsCats 项目复盘：从猫狗分类开始理解 PyTorch 训练闭环](https://blog.csdn.net/weixin_53384391/article/details/161862582)
 ## 目录结构
 ```text
